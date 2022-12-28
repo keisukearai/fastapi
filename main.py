@@ -18,6 +18,6 @@ def read_item(item_id: int):
 
 @app.get("/news")
 def get_news_list():
-    sql = "select * from switch_info limit 10"
+    sql = "select * from news limit 10"
     ret = db.get_data(sql)
     return ret
